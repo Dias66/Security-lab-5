@@ -1,0 +1,11 @@
+
+<div class="container">
+
+  <%= form_with url: "/home/check", method: :post do |form| %>
+  <%= form.label :query, "Enter the password:" %>
+  <%= form.text_field :query , class: "form-control"%>
+  <%= form.submit "Search" , class: "btn btn-info"%>
+  <% end %>
+</div>
+
+
